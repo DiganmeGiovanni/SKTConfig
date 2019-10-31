@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 3000
+    username: sktask
+    password: skt4sk
+
+sktask:
+  amqp:
+    exchange-delayed: products-delayed
+    queue-products-creation: products-creation
+    queue-products-creation-dlq: products-creation-dlq
+    queue-products-creation-unprocessable: products-creation-unprocessable
+    queue-products-listing: products-listing
