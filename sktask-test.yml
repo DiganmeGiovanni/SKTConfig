@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: skt4sk
+    url: jdbc:mysql://localhost:3306/sktask_test
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+sktask:
+  amqp:
+    exchange-delayed: products-delayed
+    queue-products-creation: products-creation
+    queue-products-creation-dlq: products-creation-dlq
+    queue-products-creation-unprocessable: products-creation-unprocessable
+    queue-products-listing: products-listing
